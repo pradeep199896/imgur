@@ -20,7 +20,8 @@ export class Auth extends React.Component {
     showModal=()=>{
         this.setState({
             showUp:true
-        })
+        })  
+
     }
     seeModal=()=>{
         this.setState({
@@ -52,10 +53,10 @@ export class Auth extends React.Component {
         let email_found;
         let data=JSON.parse(ls.get("userdata"))
        for(let i=0;i<data.length;i++){
-       if(data[i].email==this.state.email){
+       if(data[i].email===this.state.email){
           email_found=this.state.email
-          if(data[i].password==this.state.password){
-            alert("signed in successfully")
+          if(data[i].password===this.state.password){
+            alert("Signed in successfully")
             break
           }else{
             alert("incorrect password")

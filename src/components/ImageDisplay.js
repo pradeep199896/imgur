@@ -2,18 +2,20 @@ import React from 'react';
 import {LikeOutlined,CommentOutlined,EyeOutlined } from '@ant-design/icons';
 
 export class ImageDisplay extends React.Component {
+    //setting the state
     state={ 
         loading:null,
         url:[],
         description:[],
     }
-   
+   //fetching images from api
    mult=async (e)=>{
        let URLS=[...this.state.url]
        let Description=[...this.state.description]
        try{
         const data=await fetch('https://api.unsplash.com/photos/?client_id=TBBU3maeUq1pG8lPH4RudzMd1UUZY8EhPR8QHx0I1vk')
          let info=await data.json()
+         console.log(info)
          console.log(info[0].alt_description)
          for(let i in info)
        {
@@ -22,7 +24,7 @@ export class ImageDisplay extends React.Component {
 
         }
         console.log(Description)
-
+     //seting again state
        this.setState({
            loading:true,
            url:URLS,
@@ -33,6 +35,7 @@ export class ImageDisplay extends React.Component {
           console.log(e)
            }
        }
+       //Live compponents
        componentDidMount=()=>{
            this.mult();
        }
