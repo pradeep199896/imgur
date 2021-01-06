@@ -1,0 +1,46 @@
+.App {
+    position: relative;
+    padding-right:50px;
+}
+
+.App .inner{
+    position: relative;
+   margin-top:-340px;
+   margin-left:300px;
+    
+    font-size:17px;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+.App .inner button{
+position: absolute;
+left:230px;
+background-color: green;
+font-size:larger;
+color:white;
+font-weight: bold;
+cursor:pointer;
+border-radius: 10px;
+}
+.App .inner input{
+    color:white;
+    font-weight: bold;
+}
+#get{
+    position: absolute;
+    z-index: 1;
+    top:1550px;
+    left:20px;
+
+   
+}
+#set{
+    position: absolute;
+    z-index: 1;
+    top:1940px;
+    left:20px;
+}
+.catch{
+    color:rgba(46, 10, 104, 0.74);
+}

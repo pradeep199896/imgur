@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+.Header_1{
+     position:relative;
+     
+}
+.sub1{
+    position: absolute;
+    top:32px;
+    width:6%;
+    left:30px;
+    margin-top:20px;
+    cursor:pointer;
+    padding-right:1px;
+    border-radius: 10px;
+    
+}
+.sub1:hover{
+    border:3px solid black;
+}
+
+
+.search{
+    position: absolute;
+   top:75px;
+   left:750px;
+   width:25%;
+   height:50px;
+   font-weight:bold;
+   color:black;
+   font-size:larger;
+    
+}
+.search_button{
+    position: absolute;
+    right:35.5%;
+   top:9.4%;
+   height:47px;
+   width:48px;
+    cursor:pointer;
+    background-color: gray;
+    border-radius: 5px;;
+}
+.search_button:hover{
+    border:5px solid black;
+}
+.right_side{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width:25%;
+      right:40px;
+      top:80px;
+      padding:10px;
+}
+.right_side div button{
+    font-size:23px;
+    border:2px soli black;
+    border-radius: none;
+    cursor:pointer;
+    }
+    .right_side div .support{
+        background-color: rgb(113, 113, 206);
+        color:white;
+        font-weight: bolder;
+    }
+    .right_side div .signup{
+        background-color: rgb(22, 211, 22);
+        color:white;
+            }
+            .right_side div .signin{
+                height:40px;
+                    }
+.right_side div button a{
+    color:inherit;
+}
+.right_side div .support:hover{
+ background-color: gray;
+ border:2px solid black; 
+}
+.right_side div .signin:hover{
+    background-color:lightblue;
+   }
+   .right_side div .signup:hover{
+   border:3px solid black;
+   }
+   .set{
+       color:inherit;
+   }
